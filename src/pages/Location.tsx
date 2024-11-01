@@ -21,10 +21,12 @@ export const Location = () => {
     return (
       <main className={style.center}>
         <div className={style.container}>
-          <div>
-            Ваш IP адрес: <CopyText text={ip} />
+          <div className={style.horCenter}>
+            <div>
+              Ваш IP адрес: <CopyText text={ip} />
+            </div>
+            <div>Остальные данные не получены...</div>
           </div>
-          <div className={style.horCenter}>Остальные данные не получены...</div>
         </div>
       </main>
     );
