@@ -1,0 +1,78 @@
+$main-color-1: #eee;
+$main-color-2: #1b1b1b;
+$main-color-3: #006eff;
+$main-color-4: #99c5fd;
+$main-color-5: #ecf4ff;
+$main-color-6: #ffffff;
+$main-color-7: #00193a;
+
+.items {
+  list-style: none;
+
+  .selected {
+    color: $main-color-3;
+    border-bottom: 1px solid $main-color-3;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(80rem, 100%);
+    margin: 0 auto;
+    color: $main-color-7;
+    border-bottom: 1px solid $main-color-7;
+    margin-bottom: 2rem;
+    user-select: none;
+    cursor: pointer;
+
+    & > div {
+      padding: 2rem;
+      text-align: left;
+      width: 12%;
+    }
+
+    & > :nth-child(2) {
+      width: 56%;
+    }
+
+    & > span {
+      font-size: 4.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .items {
+    li {
+      & > div {
+        padding: 2rem 0.8rem;
+        width: 17%;
+      }
+
+      & > :nth-child(2) {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .items {
+    li {
+      & > div {
+        padding: 2rem 0.3rem;
+        width: 15%;
+      }
+
+      & > :nth-child(2) {
+        width: 45%;
+      }
+    }
+  }
+}

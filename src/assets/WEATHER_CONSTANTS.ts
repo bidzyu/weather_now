@@ -1,0 +1,1 @@
+export const CANCEL_REQUEST_TIME = 2500;

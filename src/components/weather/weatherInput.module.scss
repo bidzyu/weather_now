@@ -1,0 +1,83 @@
+$main-color-1: #eee;
+$main-color-2: #1b1b1b;
+$main-color-3: #006eff;
+$main-color-4: #99c5fd;
+$main-color-5: #ecf4ff;
+$main-color-6: #ffffff;
+$main-color-7: #00193a;
+$main-l-padding: 1rem 2rem;
+$section-padding: 5rem 2rem;
+$base-element-gap: 2rem;
+
+.title {
+  color: $main-color-7;
+}
+
+.searchContainer {
+  display: flex;
+  width: fit-content;
+  margin: $base-element-gap * 2 auto;
+  position: relative; /* Для позиционирования псевдоэлемента */
+
+  .close,
+  .searchIcon {
+    font-weight: bold;
+    color: $main-color-6;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .searchIcon {
+    font-size: 3rem;
+    transform: translateY(-51%);
+    cursor: text;
+  }
+
+  .search {
+    display: block;
+    min-width: 50rem;
+    padding: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    background-color: $main-color-4;
+    border-radius: 4rem;
+    border: 1px solid $main-color-7;
+    color: $main-color-6;
+    font-weight: 600;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0.7rem $main-color-3;
+    }
+
+    &::placeholder {
+      font-weight: 500;
+      color: $main-color-6;
+    }
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .searchContainer {
+    margin-top: 4rem;
+    width: 100%;
+
+    .search {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+}

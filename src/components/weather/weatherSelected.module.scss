@@ -1,0 +1,130 @@
+$main-color-3: #006eff;
+$main-color-4: #99c5fd;
+$main-color-5: #ecf4ff;
+$main-color-6: #ffffff;
+$main-color-7: #00193a;
+
+.night {
+  background-color: $main-color-7;
+  color: $main-color-6;
+
+  & > :first-child {
+    box-shadow: 0 0 1px $main-color-6;
+  }
+
+  .detail {
+    border-top: 1px solid $main-color-6;
+  }
+}
+
+.day {
+  background-color: $main-color-4;
+  color: $main-color-7;
+
+  & > :first-child {
+    box-shadow: 0 0 1px $main-color-7;
+  }
+
+  .detail {
+    border-top: 1px solid $main-color-7;
+  }
+}
+
+.selected {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2px $main-color-7;
+  user-select: none;
+
+  & > :first-child {
+    border-radius: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 1.2em;
+
+    & > p {
+      text-align: center;
+    }
+
+    .icon {
+      font-size: 1.8em;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 5rem;
+
+      span {
+        font-weight: 900;
+      }
+    }
+
+    span {
+      font-size: 1.2em;
+    }
+
+    .detail {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: min(90rem, 100%);
+      margin-top: 4rem;
+      list-style: none;
+
+      li {
+        width: 20%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin-top: 1.5rem;
+          font-size: 1.1em;
+
+          span {
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 890px) {
+  .selected {
+    .info {
+      .detail {
+        display: flex; // Убедитесь, что элемент является flex-контейнером
+        flex-wrap: wrap; // Добавляем flex-wrap
+
+        & > li {
+          width: 33%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .selected {
+    .info {
+      .detail {
+        display: flex; // Убедитесь, что элемент является flex-контейнером
+        flex-wrap: wrap; // Добавляем flex-wrap
+
+        & > li {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
