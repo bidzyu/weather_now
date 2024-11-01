@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import axios, { CancelTokenSource, AxiosResponse } from 'axios';
-import { WEATHER_KEY } from '../../../assets/Keys';
+import WEATHER_KEY from '../../../assets/Keys/WEATHER_KEY';
+
 import {
   sortCitiesById,
   filterCollisions,

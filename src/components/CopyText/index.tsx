@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TimerId } from '../../redux/slices/weather/types';
 
 interface CopyTextProps {
@@ -6,9 +6,9 @@ interface CopyTextProps {
 }
 
 const CopyText: React.FC<CopyTextProps> = ({ text }) => {
-  const [tooltipVisible, setTooltipVisible] = useState(false);
-  const [tooltipText, setToolTipText] = useState('Скопировать в буфер');
-  const [timer, setTimer] = useState<TimerId | null>(null);
+  const [tooltipVisible, setTooltipVisible] = React.useState(false);
+  const [tooltipText, setToolTipText] = React.useState('Скопировать в буфер');
+  const [timer, setTimer] = React.useState<TimerId | null>(null);
 
   const handleCopy = async () => {
     try {

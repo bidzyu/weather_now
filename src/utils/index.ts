@@ -9,3 +9,5 @@ export * from './weather/shouldSearchCity';
 export * from './getTimeoutPromise';
 export * from './isAxiosResponse';
 export * from './getCurrNavigatorGeo';
+export * from './checkScroll';
+export * from './getBodyScrollbarWidth';

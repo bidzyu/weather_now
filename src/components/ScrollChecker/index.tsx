@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { RootState } from '../../redux/stateTypes';
-import { checkScroll } from '../../utils/checkScroll';
-import { getBodyScrollbarWidth } from '../../utils/getBodyScrollbarWidth';
+import { checkScroll, getBodyScrollbarWidth } from '../../utils/';
 import './scroll.scss';
 
 export const ScrollChecker: React.FC = () => {
@@ -28,11 +27,11 @@ export const ScrollChecker: React.FC = () => {
     document.body.style.setProperty('--scroll-size', size + 'px');
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     setScroll();
   }, [data, location]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const scroll = getBodyScrollbarWidth();
     setScrollSizeProp(scroll);
 
