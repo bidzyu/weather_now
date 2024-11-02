@@ -114,6 +114,22 @@ $main-color-7: #00193a;
 }
 
 @media (max-width: 590px) {
+  .day {
+    .detail {
+      & > li {
+        border-bottom: 1px solid $main-color-7;
+      }
+    }
+  }
+
+  .night {
+    .detail {
+      & > li {
+        border-bottom: 1px solid $main-color-6;
+      }
+    }
+  }
+
   .selected {
     .info {
       .detail {
@@ -122,7 +138,6 @@ $main-color-7: #00193a;
 
         & > li {
           width: 100%;
-          text-align: center;
         }
       }
     }
