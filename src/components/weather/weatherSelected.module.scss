@@ -128,3 +128,15 @@ $main-color-7: #00193a;
     }
   }
 }
+
+@media (max-width: 460px) {
+  .selected {
+    font-size: 1.5rem;
+
+    .info {
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}

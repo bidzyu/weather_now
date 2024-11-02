@@ -35,3 +35,17 @@ nav {
     }
   }
 }
+
+@media (max-width: 460px) {
+  .logo {
+    padding: 0.3rem;
+  }
+
+  nav {
+    ul {
+      li > a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

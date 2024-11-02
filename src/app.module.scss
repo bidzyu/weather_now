@@ -104,4 +104,11 @@ footer {
 }
 
 @media (max-width: 590px) {
+  main {
+    section:first-child {
+      & > :first-child {
+        margin-top: 9rem;
+      }
+    }
+  }
 }
