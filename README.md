@@ -30,12 +30,13 @@ Follow these steps to install and run the project:
 
 ## Scripts
 
-  `npm run dev` — Runs the project in development mode with Vite.
-  `npm run build` — Compiles the project using TypeScript and creates an assembly with Vite.
-  `npm run lint` — Checks the code for errors using ESLint.
-  `npm run preview` — Preview of the project build.
+-  `npm run dev` — Runs the project in development mode with Vite.
+-  `npm run build` — Compiles the project using TypeScript and creates an assembly with Vite.
+-  `npm run lint` — Checks the code for errors using ESLint.
+-  `npm run preview` — Preview of the project build.
 
-##Links
+## Links
+
 - [Vite](https://vite.dev/guide/)
 - [React](https://react.dev).
 - [TypeScript](https://www.typescriptlang.org/docs/).
