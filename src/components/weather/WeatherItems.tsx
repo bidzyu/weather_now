@@ -26,12 +26,12 @@ export const WeatherItems: React.FC<{ scrollToSelected: () => void }> = ({
   React.useEffect(() => {
     const tz = citiesFullData[selectedIndex]?.timezone;
 
-    if (!tz) return;
+    if (tz === null) return;
 
     dispatch(setTimezone(tz));
 
     return () => {
-      if (!timezone) return;
+      if (timezone === null) return;
 
       dispatch(setTimezone(null));
     };
