@@ -7,7 +7,7 @@ This app requests and displays the current weather in all cities with the specif
 ![Preview of the project](src/assets/rm.title.png)
 
 ## Prerequisites
-- [Node.js](https://nodejs.org/) (recommended version: 20.x or higher)
+- [Node.js](https://nodejs.org/) (recommended version: 21.x or higher)
 - [npm](https://www.npmjs.com/) (it is usually installed together with Node.js)
 - [Git](https://git-scm.com/) (to clone a repository)
 
